@@ -8,5 +8,4 @@ if(b > a)
   Console.WriteLine("max=b");
 else
   Console.WriteLine("Max=a");
-
-Console.ReadLine(And);
+Console.WriteLine("and");

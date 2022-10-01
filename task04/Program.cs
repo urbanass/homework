@@ -1,17 +1,21 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("start");
-int a = 2;
-int b = 3;
-int c = 7;
-//int Max(int a, int b) => a > b ? a : b;
-//int Max(int a, int b, int c) => Max(Max(a, b), c);
-//max=a;
-//if (b>max)max=b;
-//if (c>max)max=c;
-if(a > b)
-  Console.WriteLine("max=a");
-  if(max < c);
-  Console.WriteLine("max=c");
-else
-  Console.WriteLine("Max=a");
-Console.WriteLine("and");
+﻿Console.WriteLine("start");
+int num1 = 44;
+int num2 = 5;
+int num3 = 78;
+  if (num1 > num2)
+    {
+        if (num1 > num3)
+        {
+            Console.WriteLine(num1);
+        }
+        else
+        {
+            Console.WriteLine(num3);
+        }
+    }
+    else if (num2 > num3)
+        Console.WriteLine(num2);
+    else
+        Console.WriteLine(num3);
+
+Console.WriteLine ("and");

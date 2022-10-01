@@ -2,11 +2,11 @@
 //a = 5; b = 7 -> max = 7
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
-//Console.WriteLine("Hello, World!");
-
-var a =5;
-var b = 7;
+int a = 5;
+int b = 7;
 if(b > a)
-  Console.WriteLine("b больше");
+  Console.WriteLine("max=b");
 else
-  Console.WriteLine("a больше");
+  Console.WriteLine("Max=a");
+
+Console.ReadLine();

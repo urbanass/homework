@@ -5,7 +5,7 @@
 //Console.WriteLine("Hello, World!");
 
 var a =5;
-var b = 6;
+var b = 7;
 if(b > a)
   Console.WriteLine("b больше");
 else

@@ -1,26 +1,16 @@
-﻿void FillArray(int[] collection)
+﻿void Main(string[] args)
 {
-    int length = collection.Length;
-    int index = 0;
-    while (index < length)
-    {
-        collection[index] = new Random().Next(100, 1000);
-        index++;
-    }
+    int n = 584;
+    int d = GetSecondDigit(n);
+    Console.WriteLine(d);
+    Console.ReadKey();
 }
 
-    void PrintArray(int[] col)
-    {
-     int count = col.Length;
-     int position = 0;
-     while (position < count)
-     {
-        Console.WriteLine(col[position]);
-        position++;
-    }
-    }
-
-int[] array = new int[1];
-
-FillArray(array);
-PrintArray(array);
+     int GetSecondDigit(int k)
+{
+    while (k >= 100) k /= 10;
+    int d = k % 10;
+    return d;
+}
+Main(args);
+Console.WriteLine();

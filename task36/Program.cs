@@ -14,9 +14,9 @@ void main(string[] args)
         arr[i] = r.Next(-20, 20);
         Console.Write(arr[i] + " ");
     }
-    for (int i = 0; i < size; i += 2)
+    for (int i = 1; i < size; i += 2)
     {
-        sum += arr[i+1];
+        sum += arr[i];
     }
     Console.WriteLine(" Сумма Нечетных поиций = "+ sum);
 }

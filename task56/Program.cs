@@ -31,7 +31,7 @@ for (int j = 0; j < arr.GetLength(0); j++)
 void SumElements(int[,] arr)
 {
     int minRow = 0;
-    int minSumRow = 0;
+    int minSum = 0;
     int sumRow = 0;
     for (int i = 0; i < arr.GetLength(1); i++)
     {
@@ -43,11 +43,11 @@ void SumElements(int[,] arr)
         if (sumRow < minRow)
         {
             minRow = sumRow;
-            minSumRow = i + 1;
+            minSum = i + 1;
         }
         sumRow = 0;
     }
     Console.Write("--------------");
-    Console.Write($"{minSumRow} строка c наименьшей суммой");
+    Console.Write($"{minSum} строка c наименьшей суммой");
 }
 SumElements(arr);

@@ -42,7 +42,6 @@ void CreateRows(int[] Array)
         {
             array[count] = Array[i];
             Number2 = Array[i];
-
             for (int j = i; j < Array.Length; j++)
             {
                 if (Array[j] % Number2 != 0 || Array[j] / Number2 == 1)
@@ -61,11 +60,10 @@ void CreateRows(int[] Array)
                     }
                 }
             }
-            Console.WriteLine($"Группа {group++}: {PrintIntArray(array)}");
+            Console.WriteLine($"Группа {group++}: {PrintArray(array)}");
         }
     }
 }
-
 int[] CreateArray(int n)
 {
     int[] temp = new int[n];
@@ -75,7 +73,7 @@ int[] CreateArray(int n)
     }
     return temp;
 }
-string PrintIntArray(int[] array)
+string PrintArray(int[] array)
 {
     string result = string.Empty;//объявляем строку присваиваем пустое значение.
     for (int i = 0; i < array.Length; i++)
